@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_fragment_cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:outlineAmbientShadowColor="@color/black"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/circleImageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/app_intro_bg_yellow" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="BCSELL10"
+                    android:textColor="@color/black"
+                    android:textFontWeight="500"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="1Valid : 15th Nov 2021"
+                    android:textColor="@color/gray3"
+                    android:textFontWeight="400"
+                    android:textSize="11sp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/roboto_bold"
+                android:padding="5dp"
+                android:text="APPLY"
+                android:textColor="@color/theme_sky"
+                android:textFontWeight="500"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="1dp"
+            android:background="#DDD6D6" />
+
+        <LinearLayout
+            android:visibility="visible"
+            android:layout_marginTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="Earned from"
+                android:layout_marginBottom="1dp"
+                android:textColor="@color/gray3"
+                android:textFontWeight="400"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="Raghav Chaudhary"
+                android:textColor="@color/black"
+                android:textFontWeight="500"
+                android:textSize="12sp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="6dp"
+                android:background="#DDD6D6" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_weight="400"
+            android:fontFamily="@font/roboto"
+            android:maxLines="2"
+            android:text="Get 10% Extra xash on your next order"
+            android:textColor="@color/black"
+            android:textFontWeight="400"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

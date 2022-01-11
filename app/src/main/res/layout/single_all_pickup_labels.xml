@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_fragment_cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:outlineAmbientShadowColor="@color/black"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/circleImageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/app_intro_bg_yellow" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="Pickup ID: BC85758757587"
+                    android:textColor="@color/black"
+                    android:textFontWeight="500"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="15th Nov 2021"
+                    android:textColor="@color/gray3"
+                    android:textFontWeight="400"
+                    android:textSize="11sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="3dp"
+            android:background="#DDD6D6" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:fontFamily="@font/roboto"
+            android:maxLines="2"
+            android:padding="3dp"
+            android:text="3 Newbridge Court Chino Hills, CA \n91709, United States"
+            android:textColor="@color/black"
+            android:textFontWeight="400"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="Exp Pickup Date"
+                    android:textColor="@color/gray3"
+                    android:textFontWeight="400"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="15th Nov 2021, (8:00 - 11:00 AM)"
+                    android:textColor="@color/black"
+                    android:textFontWeight="400"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="Status"
+                    android:textColor="@color/gray3"
+                    android:textFontWeight="400"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="Approved"
+                    android:textColor="@color/green"
+                    android:textFontWeight="400"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#DDD6D6" />
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/roboto_bold"
+            android:text="DOWNLOAD LABEL"
+            android:textColor="@color/theme_blue"
+            android:textSize="14sp"
+            app:icon="@drawable/ic_baseline_download_24"
+            app:iconGravity="textEnd"
+            app:iconTint="@color/theme_blue" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

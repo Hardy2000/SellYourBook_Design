@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_fragment_cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Deepak Goyal"
+                android:textColor="@color/black"
+                android:textFontWeight="500"
+                android:textSize="14sp" />
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:background="?android:attr/selectableItemBackground"
+                android:backgroundTint="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_baseline_more_vert_24" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:maxLines="2"
+            android:text="3 Newbridge Court \nChino Hills, CA 91709, United States"
+            android:textColor="@color/gray3"
+            android:textFontWeight="400"
+            android:textSize="12sp" />
+        <androidx.appcompat.widget.AppCompatCheckBox
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:button="@drawable/custom_check_box"
+            android:buttonTint="@color/theme_blue"
+            android:checked="true"
+            android:fontFamily="@font/roboto"
+            android:text="Use this ad default"
+            android:textColor="@color/theme_blue"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

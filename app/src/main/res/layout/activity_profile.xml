@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile_Activity">
+
+
+    <FrameLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/up_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.76">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:src="@drawable/temp_profile_pic" />
+
+
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right|bottom"
+            android:layout_margin="10dp"
+            android:background="@drawable/half_circle"
+            android:src="@drawable/ic_outline_photo_camera_24" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/up_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:focusable="true">
+
+            <EditText
+                style="@style/text_sub_headers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:hint="Name"
+                android:text="Deepak Goyal"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:paddingStart="0dp"
+                android:paddingEnd="0dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:focusable="true"
+            app:prefixText="+91">
+
+            <EditText
+                style="@style/text_sub_headers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:ems="10"
+                android:hint="Mobile number"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:paddingStart="0dp"
+                android:paddingEnd="0dp"
+                android:text="8096883060" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:focusable="true">
+
+            <EditText
+                style="@style/text_sub_headers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:paddingStart="0dp"
+                android:paddingEnd="0dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="170dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/bookchor_app_icon" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:textOff="Off"
+                    android:textOn="On"
+                    android:thumb="@drawable/thumb_switch"
+                    app:track="@drawable/track_switch" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/roboto"
+                android:text="Bookchor Account Connected"
+                android:textColor="@color/black"
+                android:textFontWeight="400"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/theme_yellow"
+        android:fontFamily="@font/roboto_bold"
+        android:padding="10dp"
+        android:text="UPDATE"
+        android:textColor="@color/theme_blue"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

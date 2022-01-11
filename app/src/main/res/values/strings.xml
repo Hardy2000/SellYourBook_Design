@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SellYourBook</string>
+
+    <string name="intro_subText1">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</string>
+    <string name="first_intro_head">Sell your used books</string>
+    <string name="second_intro_head">Schedule your pickup</string>
+    <string name="third_intro_head">Feedback</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="23dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/pick_genrated_icon" />
+
+
+        <TextView
+            style="@style/text_headers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="Pick up Generated" />
+
+        <TextView
+            style="@style/text_sub_headers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="4sp"
+            android:text="Thank you for selling."
+            android:textAlignment="center" />
+
+        <TextView
+            style="@style/text_sub_headers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:lineSpacingExtra="4sp"
+            android:text="lorem ipsum is a dummy text"
+            android:textAlignment="center" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="3dp"
+            app:strokeColor="@color/theme_yellow"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/roboto"
+                        android:padding="8dp"
+                        android:text="15th Nov 2021, (8:00 - 11:00 AM)"
+                        android:textColor="@color/black"
+                        android:textFontWeight="500"
+                        android:textSize="14sp" />
+
+                    <ImageButton
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="8dp"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:backgroundTint="@android:color/transparent"
+                        android:src="@drawable/ic_baseline_share"
+                        android:tint="@color/black" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#C3BBBB" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/roboto"
+                    android:paddingLeft="8dp"
+                    android:text="Pickup ID"
+                    android:textColor="@color/gray3"
+                    android:textFontWeight="400"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:padding="8dp"
+                    android:text="BC64647465657"
+                    android:textColor="@color/black"
+                    android:textFontWeight="500"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/roboto"
+                    android:paddingLeft="8dp"
+                    android:text="Address"
+                    android:textColor="@color/gray3"
+                    android:textFontWeight="400"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:text="Deepak Goyal"
+                    android:textColor="@color/black"
+                    android:textFontWeight="500"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:maxLines="2"
+                    android:paddingLeft="8dp"
+                    android:paddingBottom="8dp"
+                    android:text="3 Newbridge Court \nChino Hills, CA 91709, United States"
+                    android:textColor="@color/black"
+                    android:textFontWeight="400"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
+                        android:padding="8dp"
+                        android:text="Payment Mode :"
+                        android:textColor="@color/black"
+                        android:textFontWeight="400"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
+                        android:maxLines="1"
+                        android:paddingTop="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingBottom="8dp"
+                        android:text="Bookchor Pay"
+                        android:textColor="@color/theme_sky"
+                        android:textFontWeight="400"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/roboto"
+                    android:maxLines="2"
+                    android:paddingLeft="8dp"
+                    android:text="Lorem ipsum is a dummy text to describe payment settlement"
+                    android:textColor="@color/black"
+                    android:textFontWeight="400"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#C3BBBB" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
+                        android:padding="8dp"
+                        android:text="Total Books"
+                        android:textColor="@color/black"
+                        android:textFontWeight="400"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/roboto"
+                        android:padding="8dp"
+                        android:text="1"
+                        android:textColor="@color/black"
+                        android:textFontWeight="400"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
+                        android:maxLines="2"
+                        android:padding="8dp"
+                        android:text="Total Amount"
+                        android:textColor="@color/black"
+                        android:textFontWeight="400"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
+                        android:maxLines="2"
+                        android:paddingTop="8dp"
+                        android:paddingRight="2dp"
+                        android:paddingBottom="8dp"
+                        android:text="₹"
+                        android:textColor="@color/theme_red"
+                        android:textFontWeight="400"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
+                        android:maxLines="2"
+                        android:paddingTop="8dp"
+                        android:paddingRight="8dp"
+
+                        android:paddingBottom="8dp"
+                        android:text="100"
+                        android:textColor="@color/theme_red"
+                        android:textFontWeight="400"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="23dp"
+            android:backgroundTint="@color/theme_yellow"
+            android:fontFamily="@font/roboto_bold"
+            android:padding="10dp"
+            android:text="GO TO PICKUPS"
+            android:textColor="@color/theme_blue"
+            android:textSize="16sp"
+            app:cornerRadius="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto"
+            android:text="Attention! We don't accept pirated books"
+            android:textColor="@color/black"
+            android:textFontWeight="500"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/roboto"
+            android:padding="3dp"
+            android:text="View selling guidelines"
+            android:textColor="@color/theme_sky"
+            android:textFontWeight="500"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

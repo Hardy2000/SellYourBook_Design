@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_fragment_cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:outlineAmbientShadowColor="@color/black"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="4dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="75dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/demobook" />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="The diary of a young girl"
+                    android:textColor="@color/theme_blue"
+                    android:textFontWeight="500"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="ISBN : 9789390213221"
+                    android:textColor="@color/gray2"
+                    android:textFontWeight="400"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="Author : Anne Frank"
+                    android:textColor="@color/gray2"
+                    android:textFontWeight="400"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="Publisher : Wilco Books"
+                    android:textColor="@color/gray2"
+                    android:textFontWeight="400"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#C3BBBB"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="3dp"
+    android:layout_marginRight="6dp"
+    />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/roboto_bold"
+                android:padding="2dp"
+                android:text="Selling Amount : "
+                android:textColor="@color/black"
+                android:textFontWeight="400"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto_bold"
+                android:padding="2dp"
+                android:text="₹50"
+                android:textColor="@color/theme_red"
+                android:textFontWeight="400"
+                android:textSize="14sp" />
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:background="?android:attr/selectableItemBackground"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/ic_baseline_remove_circle" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/roboto_bold"
+                android:padding="2dp"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textFontWeight="400"
+                android:textSize="14sp" />
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:background="?android:attr/selectableItemBackground"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/ic_round_add_circle" />
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="fitXY"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_vertical"
+                android:background="?android:attr/selectableItemBackground"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/delete_icon" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

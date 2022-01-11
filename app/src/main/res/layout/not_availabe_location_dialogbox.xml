@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="23dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/location_not_available" />
+
+        <TextView
+            style="@style/text_sub_headers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="4sp"
+            android:text="Modi Nagar, Uttar Pradesh" />
+
+
+        <TextView
+            style="@style/text_headers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="4sp"
+            android:text="Oh Snap!" />
+
+        <TextView
+            style="@style/text_sub_headers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:lineSpacingExtra="4sp"
+            android:text="We are not in your city yet... \nBut we are on the way!"
+
+            android:textAlignment="center" />
+
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="23dp"
+            android:backgroundTint="@color/theme_yellow"
+            android:fontFamily="@font/roboto_bold"
+            android:padding="10dp"
+            android:text="Change City"
+            android:textColor="@color/theme_blue"
+            android:textSize="16sp"
+            app:cornerRadius="10dp" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="23dp"
+            android:button="@drawable/custom_check_box"
+            android:buttonTint="@color/gray2"
+            android:checked="false"
+            android:fontFamily="@font/roboto"
+            android:text="Notify me when this location is serviceable"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

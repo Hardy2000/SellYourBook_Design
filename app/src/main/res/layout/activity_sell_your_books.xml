@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sell_your_books">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="14dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Add Books"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+        <LinearLayout
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/border"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/searchText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/transparent"
+                android:hint="Enter 10 Digit ISBN"
+                android:inputType="text"
+                android:maxLines="1"
+                android:scrollHorizontally="true"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/theme_blue"
+                android:backgroundTint="@color/theme_yellow"
+                android:padding="15dp"
+                android:src="@drawable/ic_round_search_24" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="14dp"
+            android:background="#C3BBBB" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="14dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:fontFamily="@font/roboto"
+                android:text="2"
+                android:textColor="@color/black"
+                android:textFontWeight="500"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/roboto"
+                android:text="Amount :"
+                android:textColor="@color/black"
+                android:textFontWeight="500"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:fontFamily="@font/roboto"
+                android:text="₹100"
+                android:textColor="@color/black"
+                android:textFontWeight="500"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C3BBBB" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="14dp"
+            tools:listitem="@layout/single_select_book_for_sale" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+
+            android:fontFamily="@font/roboto"
+            android:text="Total Books :"
+            android:textColor="@color/black"
+            android:textFontWeight="500"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Create_account">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/login_or_si"
+            style="@style/text_headers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="4sp"
+            android:paddingBottom="10dp"
+            android:text="Looks like you are new" />
+
+        <TextView
+            style="@style/text_sub_headers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="4sp"
+
+            android:text="Create you account now" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="23dp"
+            android:focusable="true">
+
+            <EditText
+                style="@style/text_sub_headers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:paddingStart="0dp"
+                android:paddingEnd="0dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="23dp"
+            android:focusable="true">
+
+            <EditText
+                style="@style/text_sub_headers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:paddingStart="0dp"
+                android:paddingEnd="0dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto"
+            android:text="I have a referral code"
+            android:textColor="#0277BD" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_create_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/theme_yellow"
+        android:fontFamily="@font/roboto_bold"
+        android:padding="10dp"
+        android:text="Create Account"
+        android:textColor="@color/theme_blue"
+        android:textSize="16sp" />
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.intern.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SellYourBook">
+        <activity android:name=".Pick_Up_Activity"></activity>
+        <activity android:name=".Settings_Activity" />
+        <activity android:name=".My_Books_Activity" />
+        <activity android:name=".Select_courier_Activity" />
+        <activity android:name=".Sell_History_Activity" />
+        <activity android:name=".Select_Payment_Method_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Add_Bank_Details_activity" />
+        <activity android:name=".Apply_coupon_Activity" />
+        <activity android:name=".Add_Pick_Up_Details_Activity" />
+        <activity android:name=".Instructions_Activity" />
+        <activity android:name=".Weight_Activity" />
+        <activity android:name=".Schedule_Pickup_Activity" />
+        <activity android:name=".Profile_Activity" />
+        <activity android:name=".Manage_Address_Activity" />
+        <activity android:name=".Sell_your_books" />
+        <activity android:name=".Location_Activity" />
+        <activity
+            android:name=".Home_Container_Activity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".Create_account" />
+        <activity android:name=".Otp_Activity" />
+        <activity android:name=".Login_Activity" />
+        <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
